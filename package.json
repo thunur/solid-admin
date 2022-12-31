@@ -16,6 +16,7 @@
     "clean:cache": "rimraf node_modules/.cache/ && rimraf node_modules/.vite",
     "clean:lock": "rimraf yarn.lock && rimraf pnpm-lock.yaml && rimraf package.lock.json",
     "clean:lib": "rimraf node_modules",
+    "commit": "npx cz",
     "clean": "pnpm clean:lock && pnpm clean:lib"
   },
   "license": "MIT",
@@ -28,6 +29,7 @@
     "@types/node": "^18.11.18",
     "@xbmlz/eslint-config-prettier": "^0.1.16",
     "@xbmlz/eslint-config-solid": "^0.1.16",
+    "commitizen": "^4.2.6",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^7.0.0",
     "eslint": "^8.31.0",
