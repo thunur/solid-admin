@@ -19,6 +19,11 @@
     "clean": "pnpm clean:lock && pnpm clean:lib"
   },
   "license": "MIT",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  },
   "devDependencies": {
     "@types/node": "^18.11.18",
     "@xbmlz/eslint-config-prettier": "^0.1.16",
