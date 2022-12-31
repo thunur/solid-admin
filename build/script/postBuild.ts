@@ -14,9 +14,9 @@ export const runBuild = () => {
       runBuildConfig();
     }
 
-    console.log(`✨ ${chalk.cyan(`[${pkg.name}]`)}` + ' - build successfully!');
+    console.log(`✨ ${chalk.cyan(`[${pkg.name}]`)}` + ' - 编译完成!');
   } catch (error) {
-    console.log(chalk.red(`vite build error:\n${error}`));
+    console.log(chalk.red(`编译错误:\n${error}`));
     process.exit(1);
   }
 };

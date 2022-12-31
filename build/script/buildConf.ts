@@ -31,10 +31,10 @@ function createConfig(params: CreateConfigParams) {
     fs.mkdirp(getRootPath(OUTPUT_DIR));
     writeFileSync(getRootPath(`${OUTPUT_DIR}/${configFileName}`), configStr);
 
-    console.log(`${chalk.cyan(`✨ [${pkg.name}]`)} - configuration file is build successfully:`);
+    console.log(`${chalk.cyan(`✨ [${pkg.name}]`)} - 配置文件编译完成:`);
     console.log(`${chalk.gray(`${OUTPUT_DIR}/${chalk.green(configFileName)}`)}\n`);
   } catch (error) {
-    console.log(chalk.red(`configuration file configuration file failed to package:\n${error}`));
+    console.log(chalk.red(`配置文件编译失败:\n${error}`));
   }
 }
 

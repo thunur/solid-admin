@@ -14,7 +14,6 @@ function pathResolve(dir: string) {
 export default ({ command, mode }: ConfigEnv): UserConfig => {
   const root = process.cwd();
   const env = loadEnv(mode, root);
-  console.log('env', env);
   const viteEnv = wrapperEnv(env);
 
   const { VITE_PORT, VITE_PUBLIC_PATH, VITE_PROXY, VITE_DROP_CONSOLE } = viteEnv;
